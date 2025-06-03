@@ -43,7 +43,8 @@ function generatePassword(randomPassword) {
     /* Escolhe aleatoriamente um tipo de caractere e adiciona à senha */
     password += randomPassword[randomType]();
   }
-
+  console.log(password);
+  document.querySelector("#senha").setAttribute("value", password); // Define o valor do campo de senha no HTML
   return password;
 }
 
